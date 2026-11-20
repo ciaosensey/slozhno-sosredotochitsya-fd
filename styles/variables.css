@@ -3,6 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
+  --display-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --page-background-color: #000028;
   --page-background-image: url("../images/cover-image-dark.png");
   --menu-color: #FF0070;
@@ -10,4 +11,10 @@
   --highlight-text-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --display-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
